@@ -82,7 +82,7 @@ h2 {
     background-color: #F2994A;
     border: 2px solid #F2994A;
     border-radius: 2rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
 }
 
 .btn:hover {
@@ -133,7 +133,7 @@ h2 {
     top: 10%; 
     left: 30%; 
     background: rgba(176, 175, 175, 0.958); 
-    width: 40%;
+    width: 50%;
     height: auto; 
     border: 1px solid #ccc;
     border-radius: 2rem;
