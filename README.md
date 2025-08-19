@@ -13,15 +13,26 @@ assets/
     main.js               # Lógica principal en JavaScript
 ```
 
+
 ## Características principales
-- Visualización de productos
-- Carrito de compras interactivo
+- Visualización de productos obtenidos dinámicamente desde una API
+- Carrito de compras interactivo con actualización en tiempo real
 - Interfaz responsiva y moderna
+- Uso de clases en JavaScript para la gestión de productos y carrito
+- Implementación de funciones flecha (ES6) para operaciones y callbacks
+
 
 ## Instalación y uso
 1. Clona este repositorio o descarga los archivos.
 2. Abre `index.html` en tu navegador preferido.
 3. Explora los productos y utiliza el carrito de compras.
+
+## Detalles técnicos
+- **Consumo de API:** La aplicación obtiene la lista de productos desde una API externa utilizando `fetch`, permitiendo mostrar información actualizada y dinámica.
+- **Clases:** Se utilizan clases de JavaScript para estructurar la lógica de productos y el carrito, facilitando la reutilización y el mantenimiento del código.
+- **Funciones flecha (ES6):** Se emplean funciones flecha para callbacks y operaciones sobre arrays, haciendo el código más conciso y moderno.
+
+Puedes revisar la implementación de estas características en el archivo `assets/js/main.js`.
 
 ## Tecnologías utilizadas
 - HTML5
