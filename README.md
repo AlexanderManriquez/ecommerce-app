@@ -33,6 +33,8 @@ assets/
 2. Abre `index.html` en tu navegador preferido.
 3. Explora los productos y utiliza el carrito de compras.
 
+También puedes ver una vista previa <a href="https://alexandermanriquez.github.io/ecommerce-app/" target="_blank">aquí</a>.
+
 
 ## 🛠️ Detalles técnicos
 
