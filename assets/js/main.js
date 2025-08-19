@@ -21,7 +21,6 @@ async function fetchProducts() {
     try {
         const response = await fetch('https://fakestoreapi.com/products');
         const data = await response.json();
-        console.log(data);
 
         allProducts = data.map(product => new Producto (
             product.id,
@@ -49,11 +48,10 @@ const showProducts = (products) => {
         card.className = 'card';
 
         card.innerHTML = `
-            <img src="${product.imagen}" alt="${product.nombre}" class="card-img"
+            <img src="${product.imagen}" alt="${product.nombre}" title="${product.descripcion}" class="card-img"/>
             <div>
-                <h3 class="card-title">${product.nombre}</h3>
+                <h3 class="card-title" title="${product.nombre}">${textLimit(product.nombre, 30)}</h3>
                 <p class="card-text">$ ${product.precio}</p>
-                <p class="card-description">${product.descripcion}</p>
                 <button class="btn add-btn" data-id="${product.id}">Agregar al carrito</button>
             </div>    
             `;
@@ -131,7 +129,7 @@ const updateCart = () => {
 
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${item.nombre}</td>
+            <td>${textLimit(item.nombre, 30)}</td>
             <td>
                 <button class="quantity-minus btn" data-id="${item.id}">-</button>
                 <span>${item.cantidad}</span>
@@ -176,11 +174,15 @@ const changeQuantity = (id, delta) => {
 
     updateCart();
 }
+//Función que limita el texto a un número de caracteres
+const textLimit = (text, limit) => {
+    return text.length > limit ? text.substring(0, limit) + '...' : text;
+}
 //Evento que muestra los productos cuando carga el DOM
 document.addEventListener('DOMContentLoaded', () => {
     fetchProducts();
 
     const showingAllBtn = document.getElementById('more-btn');
     showingAllBtn.addEventListener('click', toggleProducts);
-})
+});
 

@@ -107,6 +107,9 @@ h2 {
     border-radius: 1rem;
     padding: 1.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
