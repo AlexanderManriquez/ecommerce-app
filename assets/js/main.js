@@ -143,7 +143,7 @@ const updateCart = () => {
 
     cartTotal.textContent = `$ ${total.toFixed(2)}`;
     cartQuantity.textContent = quantity;
-
+  
     cartList.querySelectorAll('.quantity-minus').forEach(btn => {
         btn.addEventListener('click', (e) => {
             changeQuantity(Number(e.currentTarget.dataset.id), -1)
