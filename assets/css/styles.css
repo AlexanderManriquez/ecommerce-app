@@ -247,3 +247,11 @@ h2 {
     background-color: #4cae50;
     transition: all 0.3s ease-out;
 }
+
+footer {
+    text-align: center;
+    color: #9989bd;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
